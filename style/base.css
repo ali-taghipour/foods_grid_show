@@ -1,0 +1,26 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background:#9c7e7e;
+}
+#header{
+    border:0.5px solid #ccc;
+    height:150px;
+    background:#c16565;
+}
+#content {
+    //border: 0.5px solid #ccc;
+    width:900px;
+    //height: 5400px;
+    margin:20px auto;
+    background:#ffeeee;
+    overflow:hidden;
+    padding-bottom:15px;
+}
+#content > .address{
+   font-family:'B Nazanin';
+   font-size:20px;
+   color:orangered;
+   margin-right:5px;
+}

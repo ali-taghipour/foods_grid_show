@@ -1,0 +1,224 @@
+﻿.all {
+    padding: 20px 0;
+}
+
+    .all > .pager {
+        text-align: center;
+        //border:0.5px solid #ccc;
+        height: 40px;
+    }
+
+        .all > .pager > #pager {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+            .all > .pager > #pager > li:not(.sel):hover {
+                transform: rotateX(30deg);
+                border: 1px solid #4cff00;
+            }
+
+            .all > .pager > #pager > li {
+                display: inline-block;
+                cursor: pointer;
+                border: 0.5px solid #ccc;
+                padding: 0px 10px;
+            }
+
+                .all > .pager > #pager > li.sel {
+                    background: yellow;
+                    color: aqua;
+                }
+                .all > .pager > #pager > li:last-child:hover,
+                .all > .pager > #pager > li:first-child:hover {
+                    background: #92ef97;
+                }
+    .all > .set {
+        //border: 1px solid #ccc;
+        height: 40px;
+        margin: 10px auto;
+        padding:0px 4px;
+    }
+
+        .all > .set > .view {
+            float: right;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .all > .set > .view > li {
+            //border:1px solid #ccc;
+            display:inline-block;
+            width:30px;
+            height:30px;
+        }
+            .all > .set > .view > li:nth-child(n):hover,
+            .all > .set > .view > li:nth-child(n).sel {
+                transition: 0.3s;
+                background-position: 0px 0px;
+            }
+            .all > .set > .view > li:nth-child(1) {
+                background: url('../images/images/shixon/g1.png') no-repeat 0px -30px;
+                background-size:30px 60px;
+                cursor:pointer;
+            }
+            .all > .set > .view > li:nth-child(2) {
+                background: url('../images/images/shixon/g2.png') no-repeat 0px -30px;
+                background-size: 30px 60px;
+                cursor: pointer;
+            }
+            .all > .set > select{
+                background:#bf9292;
+                float:left;
+                padding:3px 20px;
+                text-align:center;
+            }
+    .all > .items{
+        border:1px solid #ccc;
+    }
+    .grid{
+        height:1000px;
+        padding:10px;
+    }
+    /* grid view 1 */
+    .grid.v1 > .items{
+        //border:1px solid #ccc;
+        border-radius:3px;
+        float:right;
+        margin-left:10px;
+        margin-bottom:10px;
+        width:250px;
+        height:325px; 
+    }
+@keyframes anim1 {
+    0% {
+        opacity: 0;
+        top:-150px;
+        box-shadow:-5px 25px 1px 5px #ccc;
+    }
+    15% {
+        opacity: 1;
+        top: 0px;
+    }
+    25% {
+        opacity: 1;
+        top: -100px;
+        box-shadow: -5px 15px 1px 5px #ccc;
+    }
+    35% {
+        opacity: 1;
+        top: 0px;
+    }
+    45% {
+        opacity: 1;
+        top: -50px;
+        box-shadow: -5px 10px 1px 5px #ccc;
+    }
+    65% {
+        opacity: 1;
+        top: 0px;
+    }
+    85% {
+        opacity: 1;
+        top: -25px;
+        box-shadow: -5px 5px 1px 5px #ccc;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+        .grid.v1 > .items > img {
+            position:relative;
+            animation:anim1 3s;
+            animation-iteration-count:1;
+            cursor:pointer;
+            width: 70%;
+            display: block;
+            margin:4px auto;
+            border-radius:60%;
+        }
+        .grid.v1 > .items > .mask > h2 {
+            cursor: pointer;
+            margin: 12px 5px;
+            color: #962c93;
+            font-size: 15px;
+        }
+        .grid.v1 > .items > .mask > .star{
+           // border:1px solid #ccc;
+            width:125px;
+            height:27px;
+            display:block;
+            margin:2px auto;
+            background:url('../../images/images/shixon/star2.PNG') repeat-x;
+        }
+        .grid.v1 > .items > .mask > p {
+            cursor: pointer;
+            display: none;
+        }
+        .grid.v1 > .items > .mask > .price{
+            color:#56cce6;
+            display:block;
+            text-align:center;
+            margin:5px;
+        }
+
+        
+
+        /* grid view 2 */
+        .grid.v2 > .items {
+            border: 1px solid #ccc;
+           // border-radius: 3px;
+           // margin-left: 10px;
+            margin-bottom: 10px;
+            height:265px;
+        }
+            .grid.v2 > .items > img {
+                position: relative;
+                animation: anim1 3s;
+                animation-iteration-count: 1;
+                cursor: pointer;
+                width: 190px;
+                float: right;
+                margin: 10px 5px;
+                border-radius: 60%;
+            }
+            .grid.v2 > .items > .mask{
+                float:right;
+                width:77%;
+            }
+
+
+            .grid.v2 > .items > .mask > h2 {
+                cursor:pointer;
+                margin: 15px 35px;
+                border-bottom:2px solid red;
+                padding-bottom:10px;
+                color: #962c93;
+                font-size: 25px;
+            }
+
+            .grid.v2 > .items > .mask > .star {
+                border: 1px solid #ccc;
+                width: 125px;
+                height: 27px;
+                display: block;
+                margin: 12px 50px;
+                background: url('../../images/images/shixon/star2.PNG') repeat-x;
+            }
+            .grid.v2 > .items > .mask > p{
+                cursor:pointer;
+                color:#56cce6;
+                margin:0px 50px;
+                font-size:24px;
+                font-family:'B Nazanin';
+            }
+            .grid.v2 > .items > .mask > .price {
+                color: #04903a;
+                font-size:30px;
+                display: block;
+                float:left;
+                margin: 5px 40px;
+            }
